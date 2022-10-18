@@ -10,7 +10,7 @@ public class Program {
 
         String path = "C:\\testeJava\\out.txt";
 
-        try(BufferedWriter bw = new BufferedWriter(new FileWriter(path))){
+        try(BufferedWriter bw = new BufferedWriter(new FileWriter(path, true))){
             for(String line : lines){
                 bw.write(line);
                 bw.newLine();
